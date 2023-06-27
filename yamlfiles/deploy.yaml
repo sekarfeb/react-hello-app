@@ -1,19 +1,34 @@
+# deployment.yaml
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: react-deployment
+  name: react-app
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: react
+      app: react-app
   template:
     metadata:
       labels:
-        app: react
+        app: react-app
     spec:
       containers:
-        - name: nginx
+        - name: app
           image: sekarfeb/react-hello-app:47
           ports:
             - containerPort: 3000
+---
+# service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: app-service
+spec:
+  selector:
+    app: react-app 
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 3000
+  type: LoadBalancer # Use the appropriate service type for your environment
