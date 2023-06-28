@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Welcome <code> To Kanini</code> Project.
+          Welcome <code> To Kanini</code> Internal Project.
         </p>
         <a
           className="App-link"
