@@ -9,14 +9,7 @@ function App() {
         <p>
           Welcome <code> To Kanini</code> Internal Project (Deploy React App to Kubernetes).
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React JS
-        </a>
+
       </header>
     </div>
   );
