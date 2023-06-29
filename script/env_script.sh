@@ -1,6 +1,3 @@
-# Write your commands here
-echo "$IMAGE_NAME" > $(Build.ArtifactStagingDirectory)/custom_output.txt
-cat  $(Build.ArtifactStagingDirectory)/custom_output.txt
 
 git clone https://github.com/sekarfeb/react-hello-app.git
 cd react-hello-app
