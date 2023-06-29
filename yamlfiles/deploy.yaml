@@ -32,4 +32,4 @@ spec:
       port: 80
       targetPort: 3000
   type: LoadBalancer # Use the appropriate service type for your environment
-  loadBalancerIP: 34.71.173.26
+  loadBalancerIP: ${LB_IP}
